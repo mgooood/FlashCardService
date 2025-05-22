@@ -63,10 +63,11 @@ async function handleCategoryChange(event) {
         const data = await response.json();
         
         // Store the category data in the option element for later use
-        const option = categorySelect.options[categorySelect.selectedIndex];
-        option.dataset.jsonData = JSON.stringify({
-            searchContext: data.searchContext || ''
-        });
+        // Commented out search context functionality
+        // const option = categorySelect.options[categorySelect.selectedIndex];
+        // option.dataset.jsonData = JSON.stringify({
+        //     searchContext: data.searchContext || ''
+        // });
         
         currentDeck = shuffleArray([...data.cards]);
         currentCardIndex = 0;
@@ -96,16 +97,19 @@ function updateCardDisplay() {
     }
 
     const currentCard = currentDeck[currentCardIndex];
-    const currentCategory = categorySelect.options[categorySelect.selectedIndex];
-    const categoryData = currentCategory.dataset.jsonData ? JSON.parse(currentCategory.dataset.jsonData) : {};
+    // Commented out category data retrieval for search context
+    // const currentCategory = categorySelect.options[categorySelect.selectedIndex];
+    // const categoryData = currentCategory.dataset.jsonData ? JSON.parse(currentCategory.dataset.jsonData) : {};
     
     // Update front and back of the card
-    document.querySelector('.flashcard-front p').textContent = currentCard.term;
-    document.querySelector('.flashcard-back p').textContent = currentCard.definition;
+    flashcardFront.textContent = currentCard.term;
+    flashcardBack.textContent = currentCard.definition;
     
-    // Reset to front when changing cards
+    // Reset card to front when changing cards
     if (isFlipped) {
-        document.querySelector('.flashcard').classList.remove('flipped');
+        flashcard.classList.add('flipped');
+    } else {
+        flashcard.classList.remove('flipped');
         isFlipped = false;
     }
     
@@ -114,8 +118,9 @@ function updateCardDisplay() {
     
     // Update the Explain More button to open Bing Copilot
     const searchTerm = encodeURIComponent(currentCard.term.replace(/^What is |\?$/g, ''));
-    const searchContext = categoryData.searchContext ? ` ${encodeURIComponent(categoryData.searchContext)}` : '';
-    explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}${searchContext}`;
+    // Commented out search context from the URL
+    // const searchContext = categoryData.searchContext ? ` ${encodeURIComponent(categoryData.searchContext)}` : '';
+    explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}`;
     explainMoreBtn.target = '_blank';
     explainMoreBtn.rel = 'noopener noreferrer';
 }
