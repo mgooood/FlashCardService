@@ -90,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     flex: 1;
 }
 
@@ -98,6 +98,11 @@ body {
     width: 100%;
     max-width: 300px;
     margin: 0.5rem auto;
+}
+
+.category-selector label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 select {
