@@ -55,6 +55,13 @@ async function handleCategoryChange(event) {
         if (!response.ok) throw new Error('Failed to load category');
         
         const data = await response.json();
+        
+        // Store the category data in the option element for later use
+        const option = categorySelect.options[categorySelect.selectedIndex];
+        option.dataset.jsonData = JSON.stringify({
+            searchContext: data.searchContext || ''
+        });
+        
         currentDeck = shuffleArray([...data.cards]);
         currentCardIndex = 0;
         isFlipped = false;
@@ -79,14 +86,19 @@ function updateCardDisplay() {
     if (currentDeck.length === 0) return;
     
     const currentCard = currentDeck[currentCardIndex];
+    const currentCategory = categorySelect.options[categorySelect.selectedIndex];
+    const categoryData = currentCategory.dataset.jsonData ? JSON.parse(currentCategory.dataset.jsonData) : {};
+    
     flashcardFront.textContent = currentCard.term;
     flashcardBack.textContent = currentCard.definition;
     
     // Update card counter
     cardCounter.textContent = `${currentCardIndex + 1}/${currentDeck.length}`;
     
-    // Update explain more button
-    explainMoreBtn.href = `https://www.bing.com/search?q=${encodeURIComponent(currentCard.term)}`;
+    // Update explain more button with context
+    const searchTerm = encodeURIComponent(currentCard.term);
+    const searchContext = categoryData.searchContext ? `+${encodeURIComponent(categoryData.searchContext)}` : '';
+    explainMoreBtn.href = `https://www.bing.com/search?q=${searchTerm}${searchContext}`;
     
     // Reset card to front when changing cards
     if (isFlipped) {

@@ -1,6 +1,7 @@
 {
     "name": "Web Development",
     "description": "Key concepts in web development",
+    "searchContext": "web development",
     "cards": [
         {
             "term": "What is HTML?",

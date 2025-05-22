@@ -1,6 +1,7 @@
 {
     "name": "JavaScript Basics",
     "description": "Basic concepts in JavaScript programming",
+    "searchContext": "JavaScript programming",
     "cards": [
         {
             "term": "What is a variable?",

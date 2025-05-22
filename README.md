@@ -62,6 +62,7 @@ An interactive flashcard web application for learning and memorization. This app
    {
        "name": "Category Name",
        "description": "Brief description of the category",
+       "searchContext": "Additional context for web searches (e.g., 'JavaScript programming' or 'web development')",
        "cards": [
            {
                "term": "Term or question",
@@ -75,6 +76,15 @@ An interactive flashcard web application for learning and memorization. This app
    ```html
    <option value="yourfilename">Category Display Name</option>
    ```
+
+### Search Context Explained
+
+The `searchContext` field in the JSON file is used to provide additional context when users click the "Explain More" button. This ensures that search results are more relevant to the specific subject matter. For example:
+
+- For a JavaScript category: `"searchContext": "JavaScript programming"`
+- For a biology category: `"searchContext": "biology term"`
+
+This context is automatically combined with the card's term when performing a web search.
 
 ## Browser Support
 
