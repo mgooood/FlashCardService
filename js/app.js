@@ -42,6 +42,7 @@ function setupEventListeners() {
     
     // Card interaction
     document.querySelector('.flashcard').addEventListener('click', toggleCard);
+    flipBtn.addEventListener('click', toggleCard);
     
     // Keyboard navigation
     document.addEventListener('keydown', handleKeyDown);
