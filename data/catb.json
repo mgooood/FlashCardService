@@ -1,0 +1,46 @@
+{
+    "name": "Web Development",
+    "description": "Key concepts in web development",
+    "cards": [
+        {
+            "term": "What is HTML?",
+            "definition": "HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser."
+        },
+        {
+            "term": "What is CSS?",
+            "definition": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in HTML."
+        },
+        {
+            "term": "What is responsive design?",
+            "definition": "An approach to web design that makes web pages render well on a variety of devices and window or screen sizes."
+        },
+        {
+            "term": "What is the box model?",
+            "definition": "In CSS, the box model is essentially a box that wraps around every HTML element, consisting of: content, padding, border, and margin."
+        },
+        {
+            "term": "What is a media query?",
+            "definition": "A CSS technique used in responsive design that allows content rendering to adapt to different conditions such as screen resolution or device orientation."
+        },
+        {
+            "term": "What is the difference between '==' and '===' in JavaScript?",
+            "definition": "'==' performs type coercion before comparison, while '===' (strict equality) checks both value and type without type conversion."
+        },
+        {
+            "term": "What is a promise in JavaScript?",
+            "definition": "An object representing the eventual completion or failure of an asynchronous operation and its resulting value."
+        },
+        {
+            "term": "What is the difference between 'let' and 'const'?",
+            "definition": "'let' allows you to declare variables that can be reassigned, while 'const' is used for variables that cannot be reassigned after declaration."
+        },
+        {
+            "term": "What is CORS?",
+            "definition": "Cross-Origin Resource Sharing is a security feature that restricts web pages from making requests to a different domain than the one that served the web page."
+        },
+        {
+            "term": "What is the difference between 'null' and 'undefined'?",
+            "definition": "'undefined' means a variable has been declared but not assigned a value, while 'null' is an explicit assignment value that represents no value or no object."
+        }
+    ]
+}

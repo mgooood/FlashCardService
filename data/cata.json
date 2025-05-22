@@ -1,0 +1,46 @@
+{
+    "name": "JavaScript Basics",
+    "description": "Basic concepts in JavaScript programming",
+    "cards": [
+        {
+            "term": "What is a variable?",
+            "definition": "A named container for storing data values. In JavaScript, you can declare variables using 'let', 'const', or 'var'."
+        },
+        {
+            "term": "What is a function?",
+            "definition": "A block of code designed to perform a particular task. Functions are executed when they are called (invoked)."
+        },
+        {
+            "term": "What is an array?",
+            "definition": "A special variable that can hold more than one value at a time. Arrays are written with square brackets and elements are separated by commas."
+        },
+        {
+            "term": "What is an object?",
+            "definition": "A collection of properties, where each property is a key-value pair. Objects are written with curly braces {}."
+        },
+        {
+            "term": "What is the DOM?",
+            "definition": "The Document Object Model is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content."
+        },
+        {
+            "term": "What is an event listener?",
+            "definition": "A procedure in JavaScript that waits for an event to occur, such as a user clicking a button or pressing a key."
+        },
+        {
+            "term": "What is JSON?",
+            "definition": "JavaScript Object Notation is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate."
+        },
+        {
+            "term": "What is a callback function?",
+            "definition": "A function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action."
+        },
+        {
+            "term": "What is 'this' in JavaScript?",
+            "definition": "A keyword that refers to the object it belongs to. The value of 'this' depends on how a function is called."
+        },
+        {
+            "term": "What is closure?",
+            "definition": "A feature in JavaScript where an inner function has access to the outer (enclosing) function's variables, even after the outer function has finished execution."
+        }
+    ]
+}

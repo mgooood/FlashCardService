@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive flashcard application for learning">
+    <title>FlashCard App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>FlashCard App</h1>
+            <div class="theme-toggle">
+                <button id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-icon">🌓</span>
+                </button>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="category-selector">
+                <label for="category">Select Category:</label>
+                <select id="category" aria-label="Select flashcard category">
+                    <option value="">-- Select a category --</option>
+                    <option value="cata">Category A</option>
+                    <option value="catb">Category B</option>
+                </select>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard" tabindex="0" role="button" aria-pressed="false">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <p>Select a category to begin</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>Your flashcard answer will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-navigation">
+                <button id="prevBtn" class="nav-btn" disabled aria-label="Previous card">← Previous</button>
+                <span id="cardCounter" class="card-counter" aria-live="polite">0/0</span>
+                <button id="nextBtn" class="nav-btn" disabled aria-label="Next card">Next →</button>
+            </div>
+
+            <div class="action-buttons">
+                <button id="flipBtn" class="action-btn" disabled>Flip Card</button>
+                <a id="explainMore" class="action-btn" href="#" target="_blank" rel="noopener noreferrer" style="display: none;">
+                    Explain More
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
