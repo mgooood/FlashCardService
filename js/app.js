@@ -41,8 +41,7 @@ function setupEventListeners() {
     nextBtn.addEventListener('click', showNextCard);
     
     // Card interaction
-    flipBtn.addEventListener('click', toggleCard);
-    flashcard.addEventListener('click', toggleCard);
+    document.querySelector('.flashcard').addEventListener('click', toggleCard);
     
     // Keyboard navigation
     document.addEventListener('keydown', handleKeyDown);
@@ -89,28 +88,35 @@ async function handleCategoryChange(event) {
 
 // Update the card display with current card data
 function updateCardDisplay() {
-    if (currentDeck.length === 0) return;
-    
+    if (currentDeck.length === 0) {
+        document.querySelector('.flashcard-front p').textContent = 'No cards available in this category.';
+        document.querySelector('.flashcard-back p').textContent = '';
+        return;
+    }
+
     const currentCard = currentDeck[currentCardIndex];
     const currentCategory = categorySelect.options[categorySelect.selectedIndex];
     const categoryData = currentCategory.dataset.jsonData ? JSON.parse(currentCategory.dataset.jsonData) : {};
     
-    flashcardFront.textContent = currentCard.term;
-    flashcardBack.textContent = currentCard.definition;
+    // Update front and back of the card
+    document.querySelector('.flashcard-front p').textContent = currentCard.term;
+    document.querySelector('.flashcard-back p').textContent = currentCard.definition;
+    
+    // Reset to front when changing cards
+    if (isFlipped) {
+        document.querySelector('.flashcard').classList.remove('flipped');
+        isFlipped = false;
+    }
     
     // Update card counter
     cardCounter.textContent = `${currentCardIndex + 1}/${currentDeck.length}`;
     
-    // Update explain more button with context
-    const searchTerm = encodeURIComponent(currentCard.term);
-    const searchContext = categoryData.searchContext ? `+${encodeURIComponent(categoryData.searchContext)}` : '';
-    explainMoreBtn.href = `https://www.bing.com/search?q=${searchTerm}${searchContext}`;
-    
-    // Reset card to front when changing cards
-    if (isFlipped) {
-        flashcard.classList.remove('flipped');
-        isFlipped = false;
-    }
+    // Update the Explain More button to open Bing Copilot
+    const searchTerm = encodeURIComponent(currentCard.term.replace(/^What is |\?$/g, ''));
+    const searchContext = categoryData.searchContext ? ` ${encodeURIComponent(categoryData.searchContext)}` : '';
+    explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}${searchContext}`;
+    explainMoreBtn.target = '_blank';
+    explainMoreBtn.rel = 'noopener noreferrer';
 }
 
 // Navigation functions
@@ -135,15 +141,11 @@ function updateNavigationButtons() {
     nextBtn.disabled = currentCardIndex === currentDeck.length - 1;
 }
 
-// Card flip functionality
+// Toggle card flip
 function toggleCard() {
-    if (currentDeck.length === 0) return;
-    
+    const flashcard = document.querySelector('.flashcard');
+    flashcard.classList.toggle('flipped');
     isFlipped = !isFlipped;
-    flashcard.classList.toggle('flipped', isFlipped);
-    
-    // Update ARIA attributes for accessibility
-    flashcard.setAttribute('aria-pressed', isFlipped);
 }
 
 // Handle keyboard navigation

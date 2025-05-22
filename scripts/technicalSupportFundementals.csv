@@ -1,0 +1,211 @@
+.exe,A file extension found in Windows for an executable file
+404 Not Found,An error message you might see on websites that have been moved or deleted
+Abstraction,T o take a relatively complex system and simplify it for our use
+Address bus,"Connects the CPU to the MCC and sends over the location of the data, but not the data itself"
+Algorithm,A series of steps that solves specific problems.
+Android,A mobile operating system based on Linux
+Application,A computer program designed for a specific use
+Application software,"Any software created to fulfill a specific need, like a text editor, web browser, or graphics editor"
+ARPANET ,"The earliest version of the Internet that we see today, created by the US government project DARPA in the 1960s"
+ASCII,"The oldest character encoding standard used is ASCII. It represents the English alphabet, digits, and punctuation marks"
+Assembly language,"A language that allowed computer scientists to use human readable instructions, assembled into code that the machines could understand"
+ATA,The most common interface that hard drives use to connect to our system
+ATX (Advanced Technology eXtended),The most common form factor for motherboards
+Automation,It makes processes work automatically
+Backward compatible,It means older hardware works with newer hardware
+Binary system,"The communication that a computer uses is referred to as binary system, also known as base-2 numeral system"
+Bios (Basic Input Output Services),The BIOS is software that helps initialize the hardware in our computer and gets our operating system up and running
+BIOS/UEFI,A low-level software that initializes our computer's hardware to make sure everything is good to go
+Block storage,"It improves faster handling of data because the data isn't stored in one long piece but in blocks, so it can be accessed quicker"
+Boot,T o start up a computer
+Bootloader,A small program that loads the operating system
+Browser,A user interface for displaying and interacting with web pages
+BYOD (Bring Your Own Device),Refers to the practice of allowing people to use their own personal devices for work
+Byte,A group of 8 bits
+cables use pulses of light to represent the ones and zeros of the underlying dataFile extension,The appended part of a filename that tells us what type of file it is in certain operating systems
+Cache,The assigned stored location for recently or frequently accessed data; on a mobile app it is where anything that was changed or created with that app is stored
+Character encoding,Is used to assign our binary values to characters so that we as humans can read them
+Charge cycle,One full charge and discharge of a battery
+Children's Online Privacy Protection Act (COPPA),Regulates the information we show to children under the age of 13
+Chipset,It decides how components talk to each other on our machine
+Chrome OS,A Linux-based operating system designed by Google
+Clients,A device that receives data from a server
+Clock cycle,When you send a voltage to the clock wire
+Clock speed,The maximum number of clock cycles that it can handle in a set in a certain time period
+Clock wire,"When you send or receive data, it sends a voltage to that clock wire to let the CPU know it can start doing calculations"
+Coding,Translating one language to another
+Command Line Interface (CLI),A shell that uses text commands to interact with the operating system
+Compiled programming language,"A language that uses human readable instructions, then sends them through a compiler"
+Computer,A device that stores and processes data by performing calculations
+Computer file,"Data that we store and a file can be anything, a word document, a picture, a song, literally anything"
+Copyright,Used when creating original work
+CPU,Central processing unit
+CPU sockets,A CPU socket is a series of pins that connect a CPU’s processor to the PC’s motherboard
+Cryptography,The overarching discipline that covers the practice of coding and hiding messages from third parties
+DARPA,A US government project in the 1960s that went on to create the earliest version of the Internet that we see today
+Data blocks,Data that can be broken down into many pieces and written to different parts of the hard disk
+Data sizes,"Metrics that refer to data sizes including bit, byte, kilobyte, kibibyte, and megabyte"
+DDR SDRAM (Double Data Rate SDRAM),"A type of RAM that is faster, takes up less power, and has a larger capacity than earlier SDRAM versions"
+Decimal form- base 10 system,"In the decimal system, there are 10 possible numbers you can use ranging from zero to nine"
+Desktop,"The main screen where we can navigate our files, folders, and applications"
+Digital divide,The growing skills gap between people with and without digital literacy skills
+DIMM,Dual Inline Memory Module
+Display port,Port which also outputs audio and video
+Distribution,A version of the operating system
+Distributions,"Some common Linux distributions are Ubuntu, Debian, and Red Hat"
+Domain name,A website name; the part of the URL following www.
+Domain Name System (DNS),"A global and highly distributed network service that resolves strings of letters, such as a website name, into an IP address"
+DRAM,Dynamic Random Access Memory
+Drivers,"The drivers contain the instructions our CPU needs to understand external devices like keyboards, webcams, printers"
+DVI,DVI cables generally just output video
+Electrostatic discharge,"Electrostatic discharge is a sudden and momentary flow of electric current between two electrically charged objects caused by contact, an electrical short or dielectric breakdown"
+Error message,Helpful indicators that can point you in the right direction
+Etcher.io,A tool you can use to load an install image onto your USB device and make it bootable
+Ethernet cable,It lets you physically connect to the network through a cable
+Expansion slots,Give us the ability to increase the functionality of our computer
+External Data Bus (EDB),It's a row of wires that interconnect the parts of our computer
+Factory reset,Resetting a device to the settings it came with from the factory
+Fiber optic cable,"Fiber optic cables contain individual optical fibers which are tiny tubes made of glass about the width of a human hair. Unlike copper, which uses electrical voltages, fiber"
+File handling,A process of storing data using a program
+File system,A system used to manage files
+Finder,The file manager for all Macs
+Firmware,Software that's permanently stored on a computer component
+Folders/Directories,Used to organize files
+Form factor,A mathematical way to compensate for irregularities in the shape of an object by using a ratio between its volume and height
+GIT ,A version control system that helps keep track of changes made to files and directories
+Globalization,"The movement that lets governments, businesses, and organizations communicate and integrate together on an international scale"
+Hard drive,"It is a long term memory component that holds all of our data, which can include music, pictures, applications"
+Hardware,External or internal devices and equipment that help you perform major functions
+Hardware resource deficiency,"It refers to the lack of system resources like memory, hard drive space, etc"
+HDD (Hard disk drive),"Hard disk drives, or HDDs, use a spinning platter and a mechanical arm to read and write information"
+HDMI,A type of cable that outputs both video and audio
+Heatsink,It is used to dissipate heat from our CPU
+HFS+/APFS,HFS+ is a journaling system developed by Apple Inc. and APFS is another but more encrypted Apple journaling system
+Hostname,Used to identify the computer when it needs to talk to other computers
+Hubs,Devices that serve as a central location through which data travels through
+I/O management,Anything that can give us input or that we can use for output of data
+Information technology,"The use of digital technology, like computers and the internet, to store and process data into useful information"
+Input/Output device,"A device that performs input and output, including monitors, keyboards, mice, hard disk drives, speakers, bluetooth headsets, webcams, and network adapters"
+Install image,A downloadable operating system image used to install an operating system on a device
+Instruction set,A list of instructions that our CPU is able to run
+Internet,A worldwide system of interconnected networks
+Internet Corporation for Assigned Names and Numbers (ICANN),Where website names are registered
+Internet of Things (IoT),The concept that more and more devices are connected to the internet in a smarter fashion such as smart thermostats that turn off the air conditioner when you leave and turn it on when you come back
+Internet Protocol version 4 (IPv4),An address that consists of 32 bits separated into four groups
+Internet Protocol version 6 (IPv6),"An address that consist of a 128 bits, four times the amount that IPv4 uses"
+Internet service provider (ISP),A company that provides a consumer an internet connection
+Interpreted programming language,A language that isn't compiled ahead of time
+iOS,A mobile operating system developed by Apple Inc.
+IP address,"The most common protocol used in the network layer, used to helps us route information"
+ITX (Information Technology eXtended),A form factor for motherboards that is much smaller than ATX boards
+Kernel,"The main core of an operating system that creates processes, efficiently schedules them, and manages how processes are terminated"
+Land Grid Array (LGA),It is a type of CPU socket that stick out of the motherboard
+Lightning adaptor,"One of the standard power, data and display connector types used in mobile devices"
+like,"a mouse, a keyboard, and a monitor"
+Linux OS,Linux is one of the largest an open source operating system used heavily in business infrastructure and in the consumer space
+Logic gates,"Allow transistors to do more complex tasks, like decide where to send electrical signals depending on logical conditions"
+Logs,Files that record system events on our computer
+MAC address,A globally unique identifier attached to an individual network interface. It's a 48-bit number normally represented by six groupings of two hexadecimal numbers
+Mac OS,Apple's operating system
+Mb/s,"megabit per second, which is a unit of data transfer rate"
+Memory controller chip (MCC),A bridge between the CPU and the RAM
+Memory management,One of the functions that a kernel performs; it optimizes memory usage and make sure our applications have enough memory to run
+Memory usage,The amount of memory available in your system as well as what memory is currently being used by other applications
+Metadata,"T ells us everything we need to know about a file, including who created it, when it was last modified, who has access to it, and what type of file it is."
+Micro display port,"One of the standard power, data and display connector types used in mobile devices"
+Micro HDMI,"One of the standard power, data and display connector types used in mobile devices"
+Micro USB,"One of the standard power, data and display connector types used in mobile devices"
+Microsoft Terminal Services Client,A client program used to create RDP connections to
+Mini USB,"One of the standard power, data and display connector types used in mobile devices"
+Motherboard,The body or circulatory system of the computer that connects all the pieces together
+Network,The interconnection of computers
+Network Address Translation (NAT),A mitigation tool that lets organizations use one public IP address and many private IP addresses within the network
+Network stack,A set of hardware or software that provides the infrastructure for a computer
+Networking,"Managing, building and designing networks"
+Networking protocols,A set of rules for how we transfer data in a network
+Northbridge,interconnects stuff like RAM and video cards.
+NVMe (NVM Express),interface standard which allows greater throughput of data and increased efficiency.
+Open Source,"This means the developers will let other developers share, modify, and distribute their software for free"
+Open SSH,The most popular program to use SSH within Linux
+Operating system,The whole package that manages our computers resources and lets us interact with it
+Overclocking,it increases the rate of your CPU clock cycles in order to perform more tasks
+PC,"It means personal computer, which technically means a computer that one person uses"
+PCI Express,Peripheral Component Interconnect Express
+PDA (Personal Digital Assistant),Allows computing to go mobile
+Peripherals,"the external devices which we connect to our computer that add functionality,"
+Permission denied,An error message you might find when accessing a protected file
+Pin Grid Array (PGA),CPU socket where the pins are located on the processor itself
+Plink (PuTTY Link),A tool built into the command line after PuTTY is installed that is used to make remote SSH connections
+Ports,Connection points that we can connect devices to that extend the functionality of our computer
+POST (Power On Self Test),It figures out what hardware is on the computer
+Power supply,Converts electricity from our wall outlet onto a format that our computer can use
+Power user,Above average computer users
+Powershell,A shell (program that interprets text commands) for Windows
+Process management,"The capacity to manage the many programs in a system - when to run them, the order they run in, how many resources they take up, how long they run, etcetera"
+Process scheduler,The part of the kernel that makes multitasking possible
+Programming,Coding in a programming language
+Programming language,Special languages that software developers use to write instructions for computers to execute
+Programs,Basic instructions that tell the computer what to do
+Punch cards,A sequence of cards with holes in them to automatically perform calculations instead of manually entering them by hand
+Qwiklabs,An online platform which provides training in cloud services
+RAM,Random Access Memory
+Registers,An accessible location for storing the data that our CPU works with
+Reimaging,The process of reimaging involves wiping and reinstalling an operating system
+remote computersMini HDMI,"One of the standard power, data and display connector types used in mobile devices"
+Remote Desktop Protocol (RDP),A secure network communication protocol developed by Microsoft that allows a user to connect to another device remotely
+Return merchandise authorization (RMA),The process of receiving returned merchandise and authorizing a refund
+RGB model,"RGB or red, green, and blue model is the basic model of representing colors"
+ROM chip (Read Only Memory),A read-only memory chip where the BIOS is stored
+Root cause,The main factor that's causing a range of issues
+Router,A device that knows how to forward data between independent networks
+RPM,Revolutions per minute
+Safe operating temperature,The temperature range in which rechargeable batteries must be kept in order to avoid demanage
+SATA,"The most popular serial ATA drive, which uses one cable for data transfers"
+Scalability,The measure of a system’s ability to increase or decrease in performance and cost in response to varying loads in system processing demands
+Script,"It is run by an interpreter, which interprets the code into CPU instructions just in time to run them"
+Scripting,Coding in a scripting language
+Scripts,Mainly used to perform a single or limited range task
+SDRAM,"It stands for Synchronous DRAM, this type of RAM is synchronized to our systems' clock speed allowing quicker processing of data"
+Server logs,T ext files that contains recorded information about activities performed on a specific web server in a defined period of time
+Servers,"Devices that provide data to other devices that request that data, also known as a client"
+Shell,A program that interprets text commands and sends them to the OS to execute
+Software,The intangible instructions that tell the hardware what to do
+Software bug,An error in software that causes unexpected results
+Software management,A broad term used to refer to any and all kinds of software that are designed to manage or help manage some sort of project or task
+Southbridge,"It maintains our IO or input/output controllers, like hard drives and USB devices that input and output data."
+SSD,Solid State Drive
+SSH (Secure shell),A protocol implemented by other programs to securely access one computer from another.
+SSH authentication key,A secure authentication method for accessing a computer from other device
+SSH client,A program you must have installed on your device in order to establish an SSH connection with another device
+SSH server,Software installed on a machine that allows for that device to accept an SSH connection
+Standardization,A systematic way of naming hosts
+Standoffs,Used to raise and attach your motherboard to the case
+SOC (System On a Chip),"Packs the CPU, Ram, and sometimes even the storage onto a single chip"
+Swap space,The allocated space where the virtual memory is stored on the hard drive when the amount of physical memory space is used up or full
+Switches,Devices that help our data travel
+System,A system refers to a group of hardware components and software components that work together to fun the programs or processes in the computer
+System settings,"Settings like display resolution, user accounts, network, devices, etc"
+System software,"Software used to keep our core system running, like operating system tools and utilities"
+Task bar,"It gives us quick options and shows us information like network connectivity, the date, system notifications, sound etc"
+Terminal,A text based interface to the computer
+Thermal paste,"A substance used to better connect our CPU and heat sink, so the heat transfers from to the other better"
+Time slice,A very short interval of time that gets allocated to a process for CPU execution
+Transfer Control Protocol (TCP),A protocol that handles reliable delivery of information from one network to another
+Troubleshooting,The ability to diagnose and resolve a problem
+Type-C connector,A type of USB connector meant to replace many peripheral connections
+Ubuntu,The most popular Linux consumer distribution
+UEFI,United Extensible Firmware Interface
+Uniform Resource Locator (URL),A web address similar to a home address
+USB (Universal Serial Bus),A connection standard for connecting peripherals to devices such as computers
+USB-C adapter,"One of the standard power, data and display connector types used in mobile devices"
+User name,A unique identifier for a user account
+User space,"The aspect of an operating system that humans interact with directly like programs, such as text editors, music players, system settings, user interfaces, etcetera"
+using a disk image which is a copy of an operating systemRemote connection,The ability to connect an authorized person to a computer or network remotely; allows us to manage multiple machines from anywhere in the world
+UTF-8,The most prevalent encoding standard used today
+Virtual Box,An application you can use to install Linux and have it completely isolated from your machine
+Virtual machine (VM),"An application that uses physical resources like memory, CPU and storage, but they offer the added benefit of running multiple operating systems at once"
+Virtual memory,A combination of hard drive space and RAM that acts like memory which our processes can use
+VPN (Virtual private network),A secure method of connecting a device to a private network over the internet
+WannaCry Attack,A cyber attack that started in Europe and infected hundreds of thousands of computers across the world
+Wireless networking (Wi-Fi),Networks you connect to through radios and antennas
+World Wide Web (WWW),The information system that enables documents and other web resources to be accessed over the Internet

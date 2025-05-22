@@ -1,0 +1,851 @@
+{
+  "name": "Termsdefs",
+  "description": "Generated from TermsDefs.csv",
+  "searchContext": "Information Technology - Technical Support",
+  "cards": [
+    {
+      "term": "What is .exe?",
+      "definition": "A file extension found in Windows for an executable file"
+    },
+    {
+      "term": "What is 404 Not Found?",
+      "definition": "An error message you might see on websites that have been moved or deleted"
+    },
+    {
+      "term": "What is Abstraction?",
+      "definition": "T o take a relatively complex system and simplify it for our use"
+    },
+    {
+      "term": "What is Address bus?",
+      "definition": "Connects the CPU to the MCC and sends over the location of the data, but not the data itself"
+    },
+    {
+      "term": "What is Algorithm?",
+      "definition": "A series of steps that solves specific problems."
+    },
+    {
+      "term": "What is Android?",
+      "definition": "A mobile operating system based on Linux"
+    },
+    {
+      "term": "What is Application?",
+      "definition": "A computer program designed for a specific use"
+    },
+    {
+      "term": "What is Application software?",
+      "definition": "Any software created to fulfill a specific need, like a text editor, web browser, or graphics editor"
+    },
+    {
+      "term": "What is ARPANET?",
+      "definition": "The earliest version of the Internet that we see today, created by the US government project DARPA in the 1960s"
+    },
+    {
+      "term": "What is ASCII?",
+      "definition": "The oldest character encoding standard used is ASCII. It represents the English alphabet, digits, and punctuation marks"
+    },
+    {
+      "term": "What is Assembly language?",
+      "definition": "A language that allowed computer scientists to use human readable instructions, assembled into code that the machines could understand"
+    },
+    {
+      "term": "What is ATA?",
+      "definition": "The most common interface that hard drives use to connect to our system"
+    },
+    {
+      "term": "What is ATX (Advanced Technology eXtended)?",
+      "definition": "The most common form factor for motherboards"
+    },
+    {
+      "term": "What is Automation?",
+      "definition": "It makes processes work automatically"
+    },
+    {
+      "term": "What is Backward compatible?",
+      "definition": "It means older hardware works with newer hardware"
+    },
+    {
+      "term": "What is Binary system?",
+      "definition": "The communication that a computer uses is referred to as binary system, also known as base-2 numeral system"
+    },
+    {
+      "term": "What is Bios (Basic Input Output Services)?",
+      "definition": "The BIOS is software that helps initialize the hardware in our computer and gets our operating system up and running"
+    },
+    {
+      "term": "What is BIOS/UEFI?",
+      "definition": "A low-level software that initializes our computer's hardware to make sure everything is good to go"
+    },
+    {
+      "term": "What is Block storage?",
+      "definition": "It improves faster handling of data because the data isn't stored in one long piece but in blocks, so it can be accessed quicker"
+    },
+    {
+      "term": "What is Boot?",
+      "definition": "T o start up a computer"
+    },
+    {
+      "term": "What is Bootloader?",
+      "definition": "A small program that loads the operating system"
+    },
+    {
+      "term": "What is Browser?",
+      "definition": "A user interface for displaying and interacting with web pages"
+    },
+    {
+      "term": "What is BYOD (Bring Your Own Device)?",
+      "definition": "Refers to the practice of allowing people to use their own personal devices for work"
+    },
+    {
+      "term": "What is Byte?",
+      "definition": "A group of 8 bits"
+    },
+    {
+      "term": "What is cables use pulses of light to represent the ones and zeros of the underlying dataFile extension?",
+      "definition": "The appended part of a filename that tells us what type of file it is in certain operating systems"
+    },
+    {
+      "term": "What is Cache?",
+      "definition": "The assigned stored location for recently or frequently accessed data; on a mobile app it is where anything that was changed or created with that app is stored"
+    },
+    {
+      "term": "What is Character encoding?",
+      "definition": "Is used to assign our binary values to characters so that we as humans can read them"
+    },
+    {
+      "term": "What is Charge cycle?",
+      "definition": "One full charge and discharge of a battery"
+    },
+    {
+      "term": "What is Children's Online Privacy Protection Act (COPPA)?",
+      "definition": "Regulates the information we show to children under the age of 13"
+    },
+    {
+      "term": "What is Chipset?",
+      "definition": "It decides how components talk to each other on our machine"
+    },
+    {
+      "term": "What is Chrome OS?",
+      "definition": "A Linux-based operating system designed by Google"
+    },
+    {
+      "term": "What is Clients?",
+      "definition": "A device that receives data from a server"
+    },
+    {
+      "term": "What is Clock cycle?",
+      "definition": "When you send a voltage to the clock wire"
+    },
+    {
+      "term": "What is Clock speed?",
+      "definition": "The maximum number of clock cycles that it can handle in a set in a certain time period"
+    },
+    {
+      "term": "What is Clock wire?",
+      "definition": "When you send or receive data, it sends a voltage to that clock wire to let the CPU know it can start doing calculations"
+    },
+    {
+      "term": "What is Coding?",
+      "definition": "Translating one language to another"
+    },
+    {
+      "term": "What is Command Line Interface (CLI)?",
+      "definition": "A shell that uses text commands to interact with the operating system"
+    },
+    {
+      "term": "What is Compiled programming language?",
+      "definition": "A language that uses human readable instructions, then sends them through a compiler"
+    },
+    {
+      "term": "What is Computer?",
+      "definition": "A device that stores and processes data by performing calculations"
+    },
+    {
+      "term": "What is Computer file?",
+      "definition": "Data that we store and a file can be anything, a word document, a picture, a song, literally anything"
+    },
+    {
+      "term": "What is Copyright?",
+      "definition": "Used when creating original work"
+    },
+    {
+      "term": "What is CPU?",
+      "definition": "Central processing unit"
+    },
+    {
+      "term": "What is CPU sockets?",
+      "definition": "A CPU socket is a series of pins that connect a CPU’s processor to the PC’s motherboard"
+    },
+    {
+      "term": "What is Cryptography?",
+      "definition": "The overarching discipline that covers the practice of coding and hiding messages from third parties"
+    },
+    {
+      "term": "What is DARPA?",
+      "definition": "A US government project in the 1960s that went on to create the earliest version of the Internet that we see today"
+    },
+    {
+      "term": "What is Data blocks?",
+      "definition": "Data that can be broken down into many pieces and written to different parts of the hard disk"
+    },
+    {
+      "term": "What is Data sizes?",
+      "definition": "Metrics that refer to data sizes including bit, byte, kilobyte, kibibyte, and megabyte"
+    },
+    {
+      "term": "What is DDR SDRAM (Double Data Rate SDRAM)?",
+      "definition": "A type of RAM that is faster, takes up less power, and has a larger capacity than earlier SDRAM versions"
+    },
+    {
+      "term": "What is Decimal form- base 10 system?",
+      "definition": "In the decimal system, there are 10 possible numbers you can use ranging from zero to nine"
+    },
+    {
+      "term": "What is Desktop?",
+      "definition": "The main screen where we can navigate our files, folders, and applications"
+    },
+    {
+      "term": "What is Digital divide?",
+      "definition": "The growing skills gap between people with and without digital literacy skills"
+    },
+    {
+      "term": "What is DIMM?",
+      "definition": "Dual Inline Memory Module"
+    },
+    {
+      "term": "What is Display port?",
+      "definition": "Port which also outputs audio and video"
+    },
+    {
+      "term": "What is Distribution?",
+      "definition": "A version of the operating system"
+    },
+    {
+      "term": "What is Distributions?",
+      "definition": "Some common Linux distributions are Ubuntu, Debian, and Red Hat"
+    },
+    {
+      "term": "What is Domain name?",
+      "definition": "A website name; the part of the URL following www."
+    },
+    {
+      "term": "What is Domain Name System (DNS)?",
+      "definition": "A global and highly distributed network service that resolves strings of letters, such as a website name, into an IP address"
+    },
+    {
+      "term": "What is DRAM?",
+      "definition": "Dynamic Random Access Memory"
+    },
+    {
+      "term": "What is Drivers?",
+      "definition": "The drivers contain the instructions our CPU needs to understand external devices like keyboards, webcams, printers"
+    },
+    {
+      "term": "What is DVI?",
+      "definition": "DVI cables generally just output video"
+    },
+    {
+      "term": "What is Electrostatic discharge?",
+      "definition": "Electrostatic discharge is a sudden and momentary flow of electric current between two electrically charged objects caused by contact, an electrical short or dielectric breakdown"
+    },
+    {
+      "term": "What is Error message?",
+      "definition": "Helpful indicators that can point you in the right direction"
+    },
+    {
+      "term": "What is Etcher.io?",
+      "definition": "A tool you can use to load an install image onto your USB device and make it bootable"
+    },
+    {
+      "term": "What is Ethernet cable?",
+      "definition": "It lets you physically connect to the network through a cable"
+    },
+    {
+      "term": "What is Expansion slots?",
+      "definition": "Give us the ability to increase the functionality of our computer"
+    },
+    {
+      "term": "What is External Data Bus (EDB)?",
+      "definition": "It's a row of wires that interconnect the parts of our computer"
+    },
+    {
+      "term": "What is Factory reset?",
+      "definition": "Resetting a device to the settings it came with from the factory"
+    },
+    {
+      "term": "What is Fiber optic cable?",
+      "definition": "Fiber optic cables contain individual optical fibers which are tiny tubes made of glass about the width of a human hair. Unlike copper, which uses electrical voltages, fiber"
+    },
+    {
+      "term": "What is File handling?",
+      "definition": "A process of storing data using a program"
+    },
+    {
+      "term": "What is File system?",
+      "definition": "A system used to manage files"
+    },
+    {
+      "term": "What is Finder?",
+      "definition": "The file manager for all Macs"
+    },
+    {
+      "term": "What is Firmware?",
+      "definition": "Software that's permanently stored on a computer component"
+    },
+    {
+      "term": "What is Folders/Directories?",
+      "definition": "Used to organize files"
+    },
+    {
+      "term": "What is Form factor?",
+      "definition": "A mathematical way to compensate for irregularities in the shape of an object by using a ratio between its volume and height"
+    },
+    {
+      "term": "What is GIT?",
+      "definition": "A version control system that helps keep track of changes made to files and directories"
+    },
+    {
+      "term": "What is Globalization?",
+      "definition": "The movement that lets governments, businesses, and organizations communicate and integrate together on an international scale"
+    },
+    {
+      "term": "What is Hard drive?",
+      "definition": "It is a long term memory component that holds all of our data, which can include music, pictures, applications"
+    },
+    {
+      "term": "What is Hardware?",
+      "definition": "External or internal devices and equipment that help you perform major functions"
+    },
+    {
+      "term": "What is Hardware resource deficiency?",
+      "definition": "It refers to the lack of system resources like memory, hard drive space, etc"
+    },
+    {
+      "term": "What is HDD (Hard disk drive)?",
+      "definition": "Hard disk drives, or HDDs, use a spinning platter and a mechanical arm to read and write information"
+    },
+    {
+      "term": "What is HDMI?",
+      "definition": "A type of cable that outputs both video and audio"
+    },
+    {
+      "term": "What is Heatsink?",
+      "definition": "It is used to dissipate heat from our CPU"
+    },
+    {
+      "term": "What is HFS+/APFS?",
+      "definition": "HFS+ is a journaling system developed by Apple Inc. and APFS is another but more encrypted Apple journaling system"
+    },
+    {
+      "term": "What is Hostname?",
+      "definition": "Used to identify the computer when it needs to talk to other computers"
+    },
+    {
+      "term": "What is Hubs?",
+      "definition": "Devices that serve as a central location through which data travels through"
+    },
+    {
+      "term": "What is I/O management?",
+      "definition": "Anything that can give us input or that we can use for output of data"
+    },
+    {
+      "term": "What is Information technology?",
+      "definition": "The use of digital technology, like computers and the internet, to store and process data into useful information"
+    },
+    {
+      "term": "What is Input/Output device?",
+      "definition": "A device that performs input and output, including monitors, keyboards, mice, hard disk drives, speakers, bluetooth headsets, webcams, and network adapters"
+    },
+    {
+      "term": "What is Install image?",
+      "definition": "A downloadable operating system image used to install an operating system on a device"
+    },
+    {
+      "term": "What is Instruction set?",
+      "definition": "A list of instructions that our CPU is able to run"
+    },
+    {
+      "term": "What is Internet?",
+      "definition": "A worldwide system of interconnected networks"
+    },
+    {
+      "term": "What is Internet Corporation for Assigned Names and Numbers (ICANN)?",
+      "definition": "Where website names are registered"
+    },
+    {
+      "term": "What is Internet of Things (IoT)?",
+      "definition": "The concept that more and more devices are connected to the internet in a smarter fashion such as smart thermostats that turn off the air conditioner when you leave and turn it on when you come back"
+    },
+    {
+      "term": "What is Internet Protocol version 4 (IPv4)?",
+      "definition": "An address that consists of 32 bits separated into four groups"
+    },
+    {
+      "term": "What is Internet Protocol version 6 (IPv6)?",
+      "definition": "An address that consist of a 128 bits, four times the amount that IPv4 uses"
+    },
+    {
+      "term": "What is Internet service provider (ISP)?",
+      "definition": "A company that provides a consumer an internet connection"
+    },
+    {
+      "term": "What is Interpreted programming language?",
+      "definition": "A language that isn't compiled ahead of time"
+    },
+    {
+      "term": "What is iOS?",
+      "definition": "A mobile operating system developed by Apple Inc."
+    },
+    {
+      "term": "What is IP address?",
+      "definition": "The most common protocol used in the network layer, used to helps us route information"
+    },
+    {
+      "term": "What is ITX (Information Technology eXtended)?",
+      "definition": "A form factor for motherboards that is much smaller than ATX boards"
+    },
+    {
+      "term": "What is Kernel?",
+      "definition": "The main core of an operating system that creates processes, efficiently schedules them, and manages how processes are terminated"
+    },
+    {
+      "term": "What is Land Grid Array (LGA)?",
+      "definition": "It is a type of CPU socket that stick out of the motherboard"
+    },
+    {
+      "term": "What is Lightning adaptor?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is like?",
+      "definition": "a mouse, a keyboard, and a monitor"
+    },
+    {
+      "term": "What is Linux OS?",
+      "definition": "Linux is one of the largest an open source operating system used heavily in business infrastructure and in the consumer space"
+    },
+    {
+      "term": "What is Logic gates?",
+      "definition": "Allow transistors to do more complex tasks, like decide where to send electrical signals depending on logical conditions"
+    },
+    {
+      "term": "What is Logs?",
+      "definition": "Files that record system events on our computer"
+    },
+    {
+      "term": "What is MAC address?",
+      "definition": "A globally unique identifier attached to an individual network interface. It's a 48-bit number normally represented by six groupings of two hexadecimal numbers"
+    },
+    {
+      "term": "What is Mac OS?",
+      "definition": "Apple's operating system"
+    },
+    {
+      "term": "What is Mb/s?",
+      "definition": "megabit per second, which is a unit of data transfer rate"
+    },
+    {
+      "term": "What is Memory controller chip (MCC)?",
+      "definition": "A bridge between the CPU and the RAM"
+    },
+    {
+      "term": "What is Memory management?",
+      "definition": "One of the functions that a kernel performs; it optimizes memory usage and make sure our applications have enough memory to run"
+    },
+    {
+      "term": "What is Memory usage?",
+      "definition": "The amount of memory available in your system as well as what memory is currently being used by other applications"
+    },
+    {
+      "term": "What is Metadata?",
+      "definition": "T ells us everything we need to know about a file, including who created it, when it was last modified, who has access to it, and what type of file it is."
+    },
+    {
+      "term": "What is Micro display port?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is Micro HDMI?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is Micro USB?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is Microsoft Terminal Services Client?",
+      "definition": "A client program used to create RDP connections to"
+    },
+    {
+      "term": "What is Mini USB?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is Motherboard?",
+      "definition": "The body or circulatory system of the computer that connects all the pieces together"
+    },
+    {
+      "term": "What is Network?",
+      "definition": "The interconnection of computers"
+    },
+    {
+      "term": "What is Network Address Translation (NAT)?",
+      "definition": "A mitigation tool that lets organizations use one public IP address and many private IP addresses within the network"
+    },
+    {
+      "term": "What is Network stack?",
+      "definition": "A set of hardware or software that provides the infrastructure for a computer"
+    },
+    {
+      "term": "What is Networking?",
+      "definition": "Managing, building and designing networks"
+    },
+    {
+      "term": "What is Networking protocols?",
+      "definition": "A set of rules for how we transfer data in a network"
+    },
+    {
+      "term": "What is Northbridge?",
+      "definition": "interconnects stuff like RAM and video cards."
+    },
+    {
+      "term": "What is NVMe (NVM Express)?",
+      "definition": "interface standard which allows greater throughput of data and increased efficiency."
+    },
+    {
+      "term": "What is Open Source?",
+      "definition": "This means the developers will let other developers share, modify, and distribute their software for free"
+    },
+    {
+      "term": "What is Open SSH?",
+      "definition": "The most popular program to use SSH within Linux"
+    },
+    {
+      "term": "What is Operating system?",
+      "definition": "The whole package that manages our computers resources and lets us interact with it"
+    },
+    {
+      "term": "What is Overclocking?",
+      "definition": "it increases the rate of your CPU clock cycles in order to perform more tasks"
+    },
+    {
+      "term": "What is PC?",
+      "definition": "It means personal computer, which technically means a computer that one person uses"
+    },
+    {
+      "term": "What is PCI Express?",
+      "definition": "Peripheral Component Interconnect Express"
+    },
+    {
+      "term": "What is PDA (Personal Digital Assistant)?",
+      "definition": "Allows computing to go mobile"
+    },
+    {
+      "term": "What is Peripherals?",
+      "definition": "the external devices which we connect to our computer that add functionality,"
+    },
+    {
+      "term": "What is Permission denied?",
+      "definition": "An error message you might find when accessing a protected file"
+    },
+    {
+      "term": "What is Pin Grid Array (PGA)?",
+      "definition": "CPU socket where the pins are located on the processor itself"
+    },
+    {
+      "term": "What is Plink (PuTTY Link)?",
+      "definition": "A tool built into the command line after PuTTY is installed that is used to make remote SSH connections"
+    },
+    {
+      "term": "What is Ports?",
+      "definition": "Connection points that we can connect devices to that extend the functionality of our computer"
+    },
+    {
+      "term": "What is POST (Power On Self Test)?",
+      "definition": "It figures out what hardware is on the computer"
+    },
+    {
+      "term": "What is Power supply?",
+      "definition": "Converts electricity from our wall outlet onto a format that our computer can use"
+    },
+    {
+      "term": "What is Power user?",
+      "definition": "Above average computer users"
+    },
+    {
+      "term": "What is Powershell?",
+      "definition": "A shell (program that interprets text commands) for Windows"
+    },
+    {
+      "term": "What is Process management?",
+      "definition": "The capacity to manage the many programs in a system - when to run them, the order they run in, how many resources they take up, how long they run, etcetera"
+    },
+    {
+      "term": "What is Process scheduler?",
+      "definition": "The part of the kernel that makes multitasking possible"
+    },
+    {
+      "term": "What is Programming?",
+      "definition": "Coding in a programming language"
+    },
+    {
+      "term": "What is Programming language?",
+      "definition": "Special languages that software developers use to write instructions for computers to execute"
+    },
+    {
+      "term": "What is Programs?",
+      "definition": "Basic instructions that tell the computer what to do"
+    },
+    {
+      "term": "What is Punch cards?",
+      "definition": "A sequence of cards with holes in them to automatically perform calculations instead of manually entering them by hand"
+    },
+    {
+      "term": "What is Qwiklabs?",
+      "definition": "An online platform which provides training in cloud services"
+    },
+    {
+      "term": "What is RAM?",
+      "definition": "Random Access Memory"
+    },
+    {
+      "term": "What is Registers?",
+      "definition": "An accessible location for storing the data that our CPU works with"
+    },
+    {
+      "term": "What is Reimaging?",
+      "definition": "The process of reimaging involves wiping and reinstalling an operating system"
+    },
+    {
+      "term": "What is remote computersMini HDMI?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is Remote Desktop Protocol (RDP)?",
+      "definition": "A secure network communication protocol developed by Microsoft that allows a user to connect to another device remotely"
+    },
+    {
+      "term": "What is Return merchandise authorization (RMA)?",
+      "definition": "The process of receiving returned merchandise and authorizing a refund"
+    },
+    {
+      "term": "What is RGB model?",
+      "definition": "RGB or red, green, and blue model is the basic model of representing colors"
+    },
+    {
+      "term": "What is ROM chip (Read Only Memory)?",
+      "definition": "A read-only memory chip where the BIOS is stored"
+    },
+    {
+      "term": "What is Root cause?",
+      "definition": "The main factor that's causing a range of issues"
+    },
+    {
+      "term": "What is Router?",
+      "definition": "A device that knows how to forward data between independent networks"
+    },
+    {
+      "term": "What is RPM?",
+      "definition": "Revolutions per minute"
+    },
+    {
+      "term": "What is Safe operating temperature?",
+      "definition": "The temperature range in which rechargeable batteries must be kept in order to avoid demanage"
+    },
+    {
+      "term": "What is SATA?",
+      "definition": "The most popular serial ATA drive, which uses one cable for data transfers"
+    },
+    {
+      "term": "What is Scalability?",
+      "definition": "The measure of a system’s ability to increase or decrease in performance and cost in response to varying loads in system processing demands"
+    },
+    {
+      "term": "What is Script?",
+      "definition": "It is run by an interpreter, which interprets the code into CPU instructions just in time to run them"
+    },
+    {
+      "term": "What is Scripting?",
+      "definition": "Coding in a scripting language"
+    },
+    {
+      "term": "What is Scripts?",
+      "definition": "Mainly used to perform a single or limited range task"
+    },
+    {
+      "term": "What is SDRAM?",
+      "definition": "It stands for Synchronous DRAM, this type of RAM is synchronized to our systems' clock speed allowing quicker processing of data"
+    },
+    {
+      "term": "What is Server logs?",
+      "definition": "T ext files that contains recorded information about activities performed on a specific web server in a defined period of time"
+    },
+    {
+      "term": "What is Servers?",
+      "definition": "Devices that provide data to other devices that request that data, also known as a client"
+    },
+    {
+      "term": "What is Shell?",
+      "definition": "A program that interprets text commands and sends them to the OS to execute"
+    },
+    {
+      "term": "What is Software?",
+      "definition": "The intangible instructions that tell the hardware what to do"
+    },
+    {
+      "term": "What is Software bug?",
+      "definition": "An error in software that causes unexpected results"
+    },
+    {
+      "term": "What is Software management?",
+      "definition": "A broad term used to refer to any and all kinds of software that are designed to manage or help manage some sort of project or task"
+    },
+    {
+      "term": "What is Southbridge?",
+      "definition": "It maintains our IO or input/output controllers, like hard drives and USB devices that input and output data."
+    },
+    {
+      "term": "What is SSD?",
+      "definition": "Solid State Drive"
+    },
+    {
+      "term": "What is SSH (Secure shell)?",
+      "definition": "A protocol implemented by other programs to securely access one computer from another."
+    },
+    {
+      "term": "What is SSH authentication key?",
+      "definition": "A secure authentication method for accessing a computer from other device"
+    },
+    {
+      "term": "What is SSH client?",
+      "definition": "A program you must have installed on your device in order to establish an SSH connection with another device"
+    },
+    {
+      "term": "What is SSH server?",
+      "definition": "Software installed on a machine that allows for that device to accept an SSH connection"
+    },
+    {
+      "term": "What is Standardization?",
+      "definition": "A systematic way of naming hosts"
+    },
+    {
+      "term": "What is Standoffs?",
+      "definition": "Used to raise and attach your motherboard to the case"
+    },
+    {
+      "term": "What is SOC (System On a Chip)?",
+      "definition": "Packs the CPU, Ram, and sometimes even the storage onto a single chip"
+    },
+    {
+      "term": "What is Swap space?",
+      "definition": "The allocated space where the virtual memory is stored on the hard drive when the amount of physical memory space is used up or full"
+    },
+    {
+      "term": "What is Switches?",
+      "definition": "Devices that help our data travel"
+    },
+    {
+      "term": "What is System?",
+      "definition": "A system refers to a group of hardware components and software components that work together to fun the programs or processes in the computer"
+    },
+    {
+      "term": "What is System settings?",
+      "definition": "Settings like display resolution, user accounts, network, devices, etc"
+    },
+    {
+      "term": "What is System software?",
+      "definition": "Software used to keep our core system running, like operating system tools and utilities"
+    },
+    {
+      "term": "What is Task bar?",
+      "definition": "It gives us quick options and shows us information like network connectivity, the date, system notifications, sound etc"
+    },
+    {
+      "term": "What is Terminal?",
+      "definition": "A text based interface to the computer"
+    },
+    {
+      "term": "What is Thermal paste?",
+      "definition": "A substance used to better connect our CPU and heat sink, so the heat transfers from to the other better"
+    },
+    {
+      "term": "What is Time slice?",
+      "definition": "A very short interval of time that gets allocated to a process for CPU execution"
+    },
+    {
+      "term": "What is Transfer Control Protocol (TCP)?",
+      "definition": "A protocol that handles reliable delivery of information from one network to another"
+    },
+    {
+      "term": "What is Troubleshooting?",
+      "definition": "The ability to diagnose and resolve a problem"
+    },
+    {
+      "term": "What is Type-C connector?",
+      "definition": "A type of USB connector meant to replace many peripheral connections"
+    },
+    {
+      "term": "What is Ubuntu?",
+      "definition": "The most popular Linux consumer distribution"
+    },
+    {
+      "term": "What is UEFI?",
+      "definition": "United Extensible Firmware Interface"
+    },
+    {
+      "term": "What is Uniform Resource Locator (URL)?",
+      "definition": "A web address similar to a home address"
+    },
+    {
+      "term": "What is USB (Universal Serial Bus)?",
+      "definition": "A connection standard for connecting peripherals to devices such as computers"
+    },
+    {
+      "term": "What is USB-C adapter?",
+      "definition": "One of the standard power, data and display connector types used in mobile devices"
+    },
+    {
+      "term": "What is User name?",
+      "definition": "A unique identifier for a user account"
+    },
+    {
+      "term": "What is User space?",
+      "definition": "The aspect of an operating system that humans interact with directly like programs, such as text editors, music players, system settings, user interfaces, etcetera"
+    },
+    {
+      "term": "What is using a disk image which is a copy of an operating systemRemote connection?",
+      "definition": "The ability to connect an authorized person to a computer or network remotely; allows us to manage multiple machines from anywhere in the world"
+    },
+    {
+      "term": "What is UTF-8?",
+      "definition": "The most prevalent encoding standard used today"
+    },
+    {
+      "term": "What is Virtual Box?",
+      "definition": "An application you can use to install Linux and have it completely isolated from your machine"
+    },
+    {
+      "term": "What is Virtual machine (VM)?",
+      "definition": "An application that uses physical resources like memory, CPU and storage, but they offer the added benefit of running multiple operating systems at once"
+    },
+    {
+      "term": "What is Virtual memory?",
+      "definition": "A combination of hard drive space and RAM that acts like memory which our processes can use"
+    },
+    {
+      "term": "What is VPN (Virtual private network)?",
+      "definition": "A secure method of connecting a device to a private network over the internet"
+    },
+    {
+      "term": "What is WannaCry Attack?",
+      "definition": "A cyber attack that started in Europe and infected hundreds of thousands of computers across the world"
+    },
+    {
+      "term": "What is Wireless networking (Wi-Fi)?",
+      "definition": "Networks you connect to through radios and antennas"
+    },
+    {
+      "term": "What is World Wide Web (WWW)?",
+      "definition": "The information system that enables documents and other web resources to be accessed over the Internet"
+    }
+  ]
+}
