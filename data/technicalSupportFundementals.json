@@ -100,10 +100,6 @@
       "definition": "A group of 8 bits"
     },
     {
-      "term": "What is cables use pulses of light to represent the ones and zeros of the underlying dataFile extension?",
-      "definition": "The appended part of a filename that tells us what type of file it is in certain operating systems"
-    },
-    {
       "term": "What is Cache?",
       "definition": "The assigned stored location for recently or frequently accessed data; on a mobile app it is where anything that was changed or created with that app is stored"
     },
