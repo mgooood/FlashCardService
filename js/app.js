@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Set up event listeners
     setupEventListeners();
+    
+    // Auto-select and load the first category if available
+    if (categorySelect.options.length > 1) {  // First option is the default "Select a category"
+        categorySelect.selectedIndex = 1;  // Select first actual category
+        categorySelect.dispatchEvent(new Event('change'));  // Trigger the change event
+    }
 });
 
 function setupEventListeners() {
