@@ -125,8 +125,17 @@ function updateCardDisplay() {
     explainMoreBtn.rel = 'noopener noreferrer';
 }
 
+// Reset card to front view
+function resetCardState() {
+    if (isFlipped) {
+        flashcard.classList.remove('flipped');
+        isFlipped = false;
+    }
+}
+
 // Navigation functions
 function showNextCard() {
+    resetCardState();
     if (currentCardIndex < currentDeck.length - 1) {
         currentCardIndex++;
         updateCardDisplay();
@@ -135,6 +144,7 @@ function showNextCard() {
 }
 
 function showPreviousCard() {
+    resetCardState();
     if (currentCardIndex > 0) {
         currentCardIndex--;
         updateCardDisplay();
