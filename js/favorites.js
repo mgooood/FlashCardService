@@ -5,20 +5,13 @@ import Storage from './storage.js';
  */
 const Favorites = {
     /**
-     * Toggle favorite status of a card
+     * Add a card to favorites
      * @param {string} category - Category of the card
      * @param {Object} card - Card object with term and definition
-     * @returns {boolean} New favorite status (true if favorited, false if removed)
+     * @returns {boolean} True if the card was added to favorites
      */
-    toggleFavorite(category, card) {
-        const isFav = this.isFavorite(card.term);
-        if (isFav) {
-            Storage.removeFavorite(card.term);
-            return false;
-        } else {
-            Storage.addFavorite(category, card);
-            return true;
-        }
+    addFavorite(category, card) {
+        return Storage.addFavorite(category, card);
     },
     
     /**
@@ -44,16 +37,6 @@ const Favorites = {
      */
     hasFavorites() {
         return Storage.getFavorites().length > 0;
-    },
-    
-    /**
-     * Get all favorites for a specific category
-     * @param {string} category - Category to get favorites for
-     * @returns {Array} Array of favorite cards
-     */
-    getFavoritesForCategory(category) {
-        const favorites = this.getFavoritesByCategory();
-        return favorites[category] || [];
     }
 };
 

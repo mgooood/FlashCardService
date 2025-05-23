@@ -16,7 +16,8 @@ const elements = {
   flipBtn: document.querySelector('[data-js="flip-btn"]'),
   explainMoreBtn: document.querySelector('[data-js="explain-btn"]'),
   themeToggle: document.querySelector('[data-js="theme-toggle"]'),
-  favoriteBtn: document.getElementById('favoriteBtn')
+  favoriteBtn: document.getElementById('favoriteBtn'),
+  categorySelect: categorySelect
 };
 
 // State
@@ -37,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Set up event listeners
     setupEventListeners();
+    
+    // Load available categories
+    loadCategories();
     
     // Auto-select and load the first category if available
     if (categorySelect.options.length > 1) {
@@ -68,6 +72,45 @@ function setupEventListeners() {
     
     // Favorites button
     elements.favoriteBtn.addEventListener('click', handleFavoriteClick);
+}
+
+// Load available categories
+function loadCategories() {
+    // Clear existing options except the first one
+    while (elements.categorySelect.options.length > 1) {
+        elements.categorySelect.remove(1);
+    }
+    
+    // Add regular categories
+    const categories = [
+        { value: 'technicalSupportFundamentals', label: 'Technical Support Fundamentals' },
+        { value: 'bitsAndBytesComputerNetworking', label: 'Bits and Bytes Computer Networking' }
+    ];
+    
+    categories.forEach(cat => {
+        const option = new Option(cat.label, cat.value);
+        elements.categorySelect.add(option);
+    });
+    
+    // Add favorites if they exist
+    updateFavoritesOption();
+}
+
+// Update favorites option in the dropdown
+function updateFavoritesOption() {
+    // Remove existing favorites option if it exists
+    const existingFavOption = Array.from(elements.categorySelect.options)
+        .find(opt => opt.value === 'favorites');
+    
+    if (existingFavOption) {
+        existingFavOption.remove();
+    }
+    
+    // Add favorites option if there are favorites
+    if (Favorites.hasFavorites()) {
+        const option = new Option('Favorites', 'favorites');
+        elements.categorySelect.add(option);
+    }
 }
 
 // Handle category change
@@ -105,7 +148,7 @@ function loadFavorites() {
     // Update UI based on the first card
     if (currentDeck.length > 0) {
         const isFavorite = Favorites.isFavorite(currentDeck[0].term);
-        updateFavoriteButton(isFavorite);
+        updateFavoriteButton();
     }
 }
 
@@ -130,14 +173,6 @@ async function loadCategory(category) {
         if (flashcard.classList.contains('flipped')) {
             flashcard.classList.remove('flipped');
         }
-        
-        // Add favorites to categories if they exist
-        if (Favorites.hasFavorites()) {
-            const option = document.createElement('option');
-            option.value = 'favorites';
-            option.textContent = '⭐ Favorites';
-            categorySelect.appendChild(option);
-        }
     } catch (error) {
         console.error('Error loading category:', error);
         alert('Failed to load the selected category. Please try again.');
@@ -152,6 +187,7 @@ function updateCardDisplay() {
         flashcardBack.textContent = 'Select a category to begin';
         elements.flipBtn.disabled = true;
         elements.explainMoreBtn.style.display = 'none';
+        elements.favoriteBtn.style.display = 'none';
         return;
     }
     
@@ -170,9 +206,8 @@ function updateCardDisplay() {
     // Update explain more link
     updateExplainMoreLink(currentCard);
     
-    // Update favorite button state
-    const isFavorite = Favorites.isFavorite(currentCard.term);
-    updateFavoriteButton(isFavorite);
+    // Update favorite button
+    updateFavoriteButton();
     
     // Reset card to front if it was flipped
     if (isFlipped) {
@@ -195,31 +230,26 @@ function handleFavoriteClick() {
     if (!currentCategory || currentCategory === 'favorites' || !currentDeck[currentCardIndex]) return;
     
     const card = currentDeck[currentCardIndex];
-    const isFavorite = Favorites.toggleFavorite(currentCategory, card);
+    Favorites.addFavorite(currentCategory, card);
     
     // Update UI
-    updateFavoriteButton(isFavorite);
+    updateFavoriteButton();
     
-    // If we're in favorites view, update the deck
-    if (currentCategory === 'favorites') {
-        loadFavorites();
-    }
+    // Update favorites option in dropdown if needed
+    updateFavoritesOption();
 }
 
 // Update favorite button state
-function updateFavoriteButton(isFavorite) {
+function updateFavoriteButton() {
     if (!elements.favoriteBtn) return;
     
-    elements.favoriteBtn.classList.toggle('active', isFavorite);
-    elements.favoriteBtn.setAttribute('aria-label', 
-        isFavorite ? 'Remove from favorites' : 'Add to favorites');
-    const icon = elements.favoriteBtn.querySelector('.favorite-icon');
-    if (icon) {
-        icon.textContent = isFavorite ? '★' : '☆';
+    // Hide the button in Favorites view
+    if (currentCategory === 'favorites' || !currentDeck.length) {
+        elements.favoriteBtn.style.display = 'none';
+    } else {
+        elements.favoriteBtn.style.display = 'block';
+        elements.favoriteBtn.textContent = 'Add to Favorites';
     }
-    
-    // Disable button in favorites view or when no card is selected
-    elements.favoriteBtn.disabled = currentCategory === 'favorites' || !currentDeck.length;
 }
 
 // Navigation functions

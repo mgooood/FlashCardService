@@ -250,119 +250,76 @@ select {
 
 .action-buttons .btn-base {
     margin: 0;
+    min-width: auto;
+    white-space: nowrap;
 }
 
-.action-buttons > a {
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
-}
-
-/* ===== Base Button Styles ===== */
+/* Base Button Styles */
 .btn-base {
-  /* Reset */
-  appearance: none;
-  text-decoration: none;
-  border: none;
-  margin: 0;
-  padding: 0.75rem 1.25rem;
-  font: inherit;
-  cursor: pointer;
-  text-align: center;
-  
-  /* Layout */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  min-width: 6rem;
-  
-  /* Typography */
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 500;
-  white-space: nowrap;
-  
-  /* Visual */
-  background-color: var(--button-bg);
-  color: var(--button-text);
-  border: 1px solid var(--button-bg);
-  border-radius: 4px;
-  
-  /* Interaction */
-  transition: background-color 0.2s ease, transform 0.1s ease;
-  -webkit-tap-highlight-color: transparent;
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-bg);
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Button States */
 .btn-base:not(:disabled):hover {
-  background-color: var(--button-hover);
+    background-color: var(--button-hover);
 }
 
 .btn-base:not(:disabled):active {
-  transform: translateY(1px);
+    transform: translateY(1px);
 }
 
 .btn-base:focus-visible {
-  outline: 3px solid var(--primary-color);
-  outline-offset: 2px;
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 .btn-base:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* Button Variants */
 [data-js^="nav-"] {
-  min-width: 6rem;
+    min-width: 6rem;
 }
 
 [data-js="explain-btn"] {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Icon Button */
 .btn-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  min-width: auto;
-  padding: 0;
-  border-radius: 50%;
-  background: none;
-  color: var(--text-color);
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: auto;
+    padding: 0;
+    border-radius: 50%;
+    background: none;
+    color: var(--text-color);
 }
 
 .btn-icon:hover {
-  background-color: var(--border-color);
+    background-color: var(--border-color);
 }
 
-/* Favorites Button */
 #favoriteBtn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color);
-    transition: transform 0.2s, color 0.2s;
-}
-
-#favoriteBtn:hover {
-    transform: scale(1.1);
-}
-
-#favoriteBtn .favorite-icon {
-    display: inline-block;
-    transition: color 0.2s;
-}
-
-#favoriteBtn.active .favorite-icon {
-    color: gold;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    /* No special styles needed - it will inherit from .btn-base */
 }
 
 /* Tablet and larger devices (768px and up) */
