@@ -1,7 +1,7 @@
 {
-  "name": "Termsdefs",
-  "description": "Generated from TermsDefs.csv",
-  "searchContext": "Tech Support Fundementals",
+  "name": "Glossary1",
+  "description": "Generated from Glossary1",
+  "searchContext": "Tech Support Fundamentals",
   "cards": [
     {
       "term": "What is .exe?",
@@ -13,7 +13,7 @@
     },
     {
       "term": "What is Abstraction?",
-      "definition": "T o take a relatively complex system and simplify it for our use"
+      "definition": "To take a relatively complex system and simplify it for our use"
     },
     {
       "term": "What is Address bus?",

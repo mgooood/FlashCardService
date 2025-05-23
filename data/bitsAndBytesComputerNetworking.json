@@ -109,7 +109,7 @@
     },
     {
       "term": "What is Caching and recursive name servers?",
-      "definition": "DNS servers that both store previous query results (caching) and"
+      "definition": "DNS servers that both store previous query results (caching) and act as intermediaries that fetch the correct IP address for the requested domain name"
     },
     {
       "term": "What is Carrier-Sense Multiple Access with Collision Detection (CSMA/CD)?",
