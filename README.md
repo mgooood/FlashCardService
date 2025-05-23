@@ -4,14 +4,14 @@ An interactive flashcard web application for learning and memorization. This app
 
 ## Features
 
-- 🎴 Interactive 3D flip animation for cards
-- 📱 Mobile-first responsive design
-- 🌓 Light/Dark theme with system preference detection
-- 🔄 Shuffled card order for varied study sessions
-- 🔍 "Explain More" button to search terms on Bing
-- ⌨️ Keyboard navigation support (arrow keys, space/enter to flip)
-- 📊 Card counter to track progress
-- 🎨 Clean, accessible UI with smooth animations
+- Interactive 3D flip animation for cards
+- Mobile-first responsive design
+- Light/Dark theme with system preference detection
+- Shuffled card order for varied study sessions
+- "Explain More" button to search terms on Bing
+- Keyboard navigation support (arrow keys, space/enter to flip)
+- Card counter to track progress
+- Clean, accessible UI with smooth animations
 
 ## Getting Started
 
@@ -85,6 +85,57 @@ The `searchContext` field in the JSON file is used to provide additional context
 - For a biology category: `"searchContext": "biology term"`
 
 This context is automatically combined with the card's term when performing a web search.
+
+## Code Style & Architecture
+
+### Button System
+
+The application uses a consistent button system with the following features:
+
+- **Base Button Class**: `.btn-base` provides consistent styling for all buttons
+- **Icon Buttons**: Use `.btn-icon` for icon-only buttons
+- **JavaScript Hooks**: Use `data-js` attributes instead of classes for JavaScript functionality
+  - `data-js="nav-prev"`: Previous navigation button
+  - `data-js="nav-next"`: Next navigation button
+  - `data-js="flip-btn"`: Flip card button
+  - `data-js="explain-btn"`: Explain more button
+  - `data-js="theme-toggle"`: Theme toggle button
+
+### JavaScript Architecture
+
+- DOM elements are cached at the top of the file
+- Event listeners are set up in `setupEventListeners()`
+- State is managed in dedicated variables
+- Functions are organized by feature
+
+### CSS Organization
+
+- Variables are defined in `:root`
+- Base styles come first
+- Component styles follow
+- Media queries are at the bottom
+- Button styles are consolidated in the button system
+
+## Development
+
+### Adding New Buttons
+
+1. Add the button to HTML with appropriate classes and data attributes:
+   ```html
+   <button class="btn-base" data-js="your-button">Button Text</button>
+   ```
+
+2. In JavaScript, reference it using the data attribute:
+   ```javascript
+   const yourButton = document.querySelector('[data-js="your-button"]');
+   ```
+
+### Styling Guidelines
+
+- Use CSS variables for theming
+- Keep styles scoped to components
+- Follow mobile-first approach
+- Use semantic class names
 
 ## Browser Support
 

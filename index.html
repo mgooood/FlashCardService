@@ -16,7 +16,7 @@
         <header class="app-header">
             <h1>FlashCard App</h1>
             <div class="theme-toggle">
-                <button id="themeToggle" aria-label="Toggle dark/light mode">
+                <button id="themeToggle" class="btn-icon" data-js="theme-toggle" aria-label="Toggle dark/light mode">
                     <span class="theme-icon">🌓</span>
                 </button>
             </div>
@@ -50,14 +50,14 @@
             </div>
 
             <div class="card-navigation">
-                <button id="prevBtn" class="nav-btn" disabled aria-label="Previous card">← Previous</button>
+                <button id="prevBtn" class="btn-base" data-js="nav-prev" disabled>← Previous</button>
                 <span id="cardCounter" class="card-counter" aria-live="polite">0/0</span>
-                <button id="nextBtn" class="nav-btn" disabled aria-label="Next card">Next →</button>
+                <button id="nextBtn" class="btn-base" data-js="nav-next" disabled>Next →</button>
             </div>
 
             <div class="action-buttons">
-                <button id="flipBtn" class="action-btn" disabled>Flip Card</button>
-                <a id="explainMore" class="action-btn" href="#" target="_blank" rel="noopener noreferrer" style="display: none;">
+                <button id="flipBtn" class="btn-base" data-js="flip-btn" disabled>Flip Card</button>
+                <a id="explainMore" class="btn-base" href="#" data-js="explain-btn" target="_blank" rel="noopener noreferrer" style="display: none;">
                     Explain More
                 </a>
             </div>

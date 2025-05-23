@@ -2,13 +2,17 @@
 const flashcard = document.querySelector('.flashcard');
 const flashcardFront = document.querySelector('.flashcard-front p');
 const flashcardBack = document.querySelector('.flashcard-back p');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const flipBtn = document.getElementById('flipBtn');
-const explainMoreBtn = document.getElementById('explainMore');
 const cardCounter = document.getElementById('cardCounter');
 const categorySelect = document.getElementById('category');
-const themeToggle = document.getElementById('themeToggle');
+
+// Cache DOM elements with data-js attributes
+const elements = {
+  prevBtn: document.querySelector('[data-js="nav-prev"]'),
+  nextBtn: document.querySelector('[data-js="nav-next"]'),
+  flipBtn: document.querySelector('[data-js="flip-btn"]'),
+  explainMoreBtn: document.querySelector('[data-js="explain-btn"]'),
+  themeToggle: document.querySelector('[data-js="theme-toggle"]')
+};
 
 // State
 let currentDeck = [];
@@ -26,29 +30,32 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
     
     // Auto-select and load the first category if available
-    if (categorySelect.options.length > 1) {  // First option is the default "Select a category"
-        categorySelect.selectedIndex = 1;  // Select first actual category
-        categorySelect.dispatchEvent(new Event('change'));  // Trigger the change event
+    if (categorySelect.options.length > 1) {
+        categorySelect.selectedIndex = 1;
+        categorySelect.dispatchEvent(new Event('change'));
     }
 });
 
+/**
+ * Sets up all event listeners for the application
+ */
 function setupEventListeners() {
     // Category selection
-    categorySelect.addEventListener('change', handleCategoryChange);
+    categorySelect?.addEventListener('change', handleCategoryChange);
     
     // Navigation buttons
-    prevBtn.addEventListener('click', showPreviousCard);
-    nextBtn.addEventListener('click', showNextCard);
+    elements.prevBtn?.addEventListener('click', showPreviousCard);
+    elements.nextBtn?.addEventListener('click', showNextCard);
     
     // Card interaction
-    document.querySelector('.flashcard').addEventListener('click', toggleCard);
-    flipBtn.addEventListener('click', toggleCard);
+    flashcard?.addEventListener('click', toggleCard);
+    elements.flipBtn?.addEventListener('click', toggleCard);
     
     // Keyboard navigation
     document.addEventListener('keydown', handleKeyDown);
     
     // Theme toggle
-    themeToggle.addEventListener('click', toggleTheme);
+    elements.themeToggle?.addEventListener('click', toggleTheme);
 }
 
 // Handle category selection
@@ -62,21 +69,14 @@ async function handleCategoryChange(event) {
         
         const data = await response.json();
         
-        // Store the category data in the option element for later use
-        // Commented out search context functionality
-        // const option = categorySelect.options[categorySelect.selectedIndex];
-        // option.dataset.jsonData = JSON.stringify({
-        //     searchContext: data.searchContext || ''
-        // });
-        
         currentDeck = shuffleArray([...data.cards]);
         currentCardIndex = 0;
         isFlipped = false;
         
         updateCardDisplay();
         updateNavigationButtons();
-        explainMoreBtn.style.display = 'inline-block';
-        flipBtn.disabled = false;
+        elements.explainMoreBtn.style.display = 'inline-block';
+        elements.flipBtn.disabled = false;
         
         // Reset card to front when changing categories
         if (flashcard.classList.contains('flipped')) {
@@ -91,15 +91,12 @@ async function handleCategoryChange(event) {
 // Update the card display with current card data
 function updateCardDisplay() {
     if (currentDeck.length === 0) {
-        document.querySelector('.flashcard-front p').textContent = 'No cards available in this category.';
-        document.querySelector('.flashcard-back p').textContent = '';
+        flashcardFront.textContent = 'No cards available in this category.';
+        flashcardBack.textContent = '';
         return;
     }
 
     const currentCard = currentDeck[currentCardIndex];
-    // Commented out category data retrieval for search context
-    // const currentCategory = categorySelect.options[categorySelect.selectedIndex];
-    // const categoryData = currentCategory.dataset.jsonData ? JSON.parse(currentCategory.dataset.jsonData) : {};
     
     // Update front and back of the card
     flashcardFront.textContent = currentCard.term;
@@ -118,11 +115,9 @@ function updateCardDisplay() {
     
     // Update the Explain More button to open Bing Copilot
     const searchTerm = encodeURIComponent(currentCard.term.replace(/^What is |\?$/g, ''));
-    // Commented out search context from the URL
-    // const searchContext = categoryData.searchContext ? ` ${encodeURIComponent(categoryData.searchContext)}` : '';
-    explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}`;
-    explainMoreBtn.target = '_blank';
-    explainMoreBtn.rel = 'noopener noreferrer';
+    elements.explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}`;
+    elements.explainMoreBtn.target = '_blank';
+    elements.explainMoreBtn.rel = 'noopener noreferrer';
 }
 
 // Reset card to front view
@@ -153,8 +148,8 @@ function showPreviousCard() {
 }
 
 function updateNavigationButtons() {
-    prevBtn.disabled = currentCardIndex === 0;
-    nextBtn.disabled = currentCardIndex === currentDeck.length - 1;
+    elements.prevBtn.disabled = currentCardIndex === 0;
+    elements.nextBtn.disabled = currentCardIndex === currentDeck.length - 1;
 }
 
 // Toggle card flip
@@ -170,10 +165,10 @@ function handleKeyDown(event) {
     
     switch(event.key) {
         case 'ArrowLeft':
-            if (!prevBtn.disabled) showPreviousCard();
+            if (!elements.prevBtn.disabled) showPreviousCard();
             break;
         case 'ArrowRight':
-            if (!nextBtn.disabled) showNextCard();
+            if (!elements.nextBtn.disabled) showNextCard();
             break;
         case ' ':
         case 'Enter':
@@ -194,7 +189,7 @@ function toggleTheme() {
 function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     const icon = theme === 'dark' ? '☀️' : '🌓';
-    themeToggle.querySelector('.theme-icon').textContent = icon;
+    elements.themeToggle.querySelector('.theme-icon').textContent = icon;
 }
 
 // Utility function to shuffle an array (Fisher-Yates algorithm)
