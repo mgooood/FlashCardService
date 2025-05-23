@@ -600,10 +600,6 @@
       "definition": "A DNS record mapping a domain name to its IPv6 address"
     },
     {
-      "term": "What is RECEIVED?",
-      "definition": "A TCP connection state indicating the endpoint has received a FIN from the peer and must send its own FIN"
-    },
-    {
       "term": "What is Receiving address?",
       "definition": "In messaging or transactions"
     },

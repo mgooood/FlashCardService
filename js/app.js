@@ -18,6 +18,7 @@ const elements = {
 let currentDeck = [];
 let currentCardIndex = 0;
 let isFlipped = false;
+let data = {};
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +68,7 @@ async function handleCategoryChange(event) {
         const response = await fetch(`data/${category}.json`);
         if (!response.ok) throw new Error('Failed to load category');
         
-        const data = await response.json();
+        data = await response.json();
         
         currentDeck = shuffleArray([...data.cards]);
         currentCardIndex = 0;
@@ -113,9 +114,10 @@ function updateCardDisplay() {
     // Update card counter
     cardCounter.textContent = `${currentCardIndex + 1}/${currentDeck.length}`;
     
-    // Update the Explain More button to open Bing Copilot
-    const searchTerm = encodeURIComponent(currentCard.term.replace(/^What is |\?$/g, ''));
-    elements.explainMoreBtn.href = `https://copilot.microsoft.com/?q=${searchTerm}`;
+    // Update the Explain More button to open Bing Copilot with search context
+    const searchTerm = currentCard.term.replace('?', '');
+    const searchContext = data.searchContext ? ` ${data.searchContext}` : '';
+    elements.explainMoreBtn.href = `https://copilot.microsoft.com/?q=${encodeURIComponent(searchTerm + searchContext)}`;
     elements.explainMoreBtn.target = '_blank';
     elements.explainMoreBtn.rel = 'noopener noreferrer';
 }
