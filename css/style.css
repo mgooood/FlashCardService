@@ -243,8 +243,19 @@ select {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    width: 100%;
-    max-width: 400px;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.action-buttons .btn-base {
+    margin: 0;
+}
+
+.action-buttons > a {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
 }
 
 /* ===== Base Button Styles ===== */
@@ -324,6 +335,34 @@ select {
 
 .btn-icon:hover {
   background-color: var(--border-color);
+}
+
+/* Favorites Button */
+#favoriteBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: transform 0.2s, color 0.2s;
+}
+
+#favoriteBtn:hover {
+    transform: scale(1.1);
+}
+
+#favoriteBtn .favorite-icon {
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+#favoriteBtn.active .favorite-icon {
+    color: gold;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
 /* Tablet and larger devices (768px and up) */
