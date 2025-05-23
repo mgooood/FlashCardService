@@ -5,6 +5,13 @@ import Storage from './storage.js';
  */
 const Favorites = {
     /**
+     * Clear all favorites
+     */
+    clearAll() {
+        Storage.clearAll();
+    },
+    
+    /**
      * Add a card to favorites
      * @param {string} category - Category of the card
      * @param {Object} card - Card object with term and definition

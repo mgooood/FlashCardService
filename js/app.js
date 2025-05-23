@@ -8,6 +8,7 @@ const flashcardFront = document.querySelector('.flashcard-front p');
 const flashcardBack = document.querySelector('.flashcard-back p');
 const cardCounter = document.getElementById('cardCounter');
 const categorySelect = document.getElementById('category');
+const clearFavoritesBtn = document.getElementById('clearFavoritesBtn');
 
 // Cache DOM elements with data-js attributes
 const elements = {
@@ -17,6 +18,7 @@ const elements = {
   explainMoreBtn: document.querySelector('[data-js="explain-btn"]'),
   themeToggle: document.querySelector('[data-js="theme-toggle"]'),
   favoriteBtn: document.getElementById('favoriteBtn'),
+  clearFavoritesBtn: clearFavoritesBtn,
   categorySelect: categorySelect
 };
 
@@ -72,6 +74,9 @@ function setupEventListeners() {
     
     // Favorites button
     elements.favoriteBtn.addEventListener('click', handleFavoriteClick);
+    
+    // Clear favorites button
+    elements.clearFavoritesBtn.addEventListener('click', handleClearFavorites);
 }
 
 // Load available categories
@@ -111,6 +116,14 @@ function updateFavoritesOption() {
         const option = new Option('Favorites', 'favorites');
         elements.categorySelect.add(option);
     }
+    
+    // Show/hide clear favorites button
+    updateClearFavoritesButton();
+}
+
+// Update clear favorites button visibility
+function updateClearFavoritesButton() {
+    elements.clearFavoritesBtn.style.display = (currentCategory === 'favorites') ? 'inline-block' : 'none';
 }
 
 // Handle category change
@@ -118,6 +131,9 @@ function handleCategoryChange(e) {
     const category = e.target.value;
     currentCategory = category;
     currentCardIndex = 0;
+    
+    // Update favorites button visibility based on selected category
+    updateClearFavoritesButton();
     
     if (category === 'favorites') {
         loadFavorites();
@@ -144,6 +160,7 @@ function loadFavorites() {
     }
     
     updateCardDisplay();
+    updateClearFavoritesButton();
     
     // Update UI based on the first card
     if (currentDeck.length > 0) {
@@ -331,5 +348,46 @@ function resetCardState() {
     if (isFlipped) {
         flashcard.classList.remove('flipped');
         isFlipped = false;
+    }
+}
+
+// Handle clear favorites
+function handleClearFavorites() {
+    if (confirm('Are you sure you want to clear all favorites? This action cannot be undone.')) {
+        Favorites.clearAll();
+        
+        // Remove favorites option from dropdown
+        const favoritesOption = Array.from(elements.categorySelect.options)
+            .find(opt => opt.value === 'favorites');
+        
+        if (favoritesOption) {
+            favoritesOption.remove();
+        }
+        
+        // Hide clear favorites button
+        elements.clearFavoritesBtn.style.display = 'none';
+        
+        // If currently viewing favorites, reset to first category
+        if (currentCategory === 'favorites') {
+            // Reset to first non-default option if available
+            if (elements.categorySelect.options.length > 1) {
+                elements.categorySelect.selectedIndex = 1;
+                currentCategory = elements.categorySelect.value;
+                loadCategory(currentCategory);
+            } else {
+                // No categories available, reset to initial state
+                currentDeck = [];
+                currentCardIndex = 0;
+                updateCardDisplay();
+            }
+        } else {
+            // Just update the UI to reflect the change
+            updateFavoritesOption();
+        }
+        
+        // Update favorite button state if needed
+        if (currentDeck.length > 0) {
+            updateFavoriteButton();
+        }
     }
 }

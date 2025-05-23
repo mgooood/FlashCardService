@@ -20,6 +20,13 @@ const Storage = {
     },
     
     /**
+     * Clear all favorites from localStorage
+     */
+    clearAll() {
+        localStorage.removeItem('flashcardFavorites');
+    },
+    
+    /**
      * Add a card to favorites
      * @param {string} category - Category of the card
      * @param {Object} card - Card object with term and definition
